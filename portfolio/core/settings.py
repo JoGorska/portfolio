@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'portfolio.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 SITE_ID = 1
-WSGI_APPLICATION = 'portfolio.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
