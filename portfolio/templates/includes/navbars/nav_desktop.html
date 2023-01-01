@@ -12,7 +12,7 @@
           </a>
           <ul id="nav-big-items" class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
             <li class="">
-              <a href="" class="nav-link text-white-50">
+              <a href="{% url 'dashboard' %}" class="nav-link text-white-50">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                   <use xlink:href="#home"/>
                 </svg>
@@ -51,11 +51,11 @@
                 <!-- drop down for user that is logged in -->
                 <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                   <li>
-                    <a class="dropdown-item" href="">User profile
+                    <a class="dropdown-item" href="{% url 'profile' %}">User profile
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="">Sign out
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">Sign out
                     </a>
                   </li>
                 </ul>
@@ -66,11 +66,11 @@
                   <!-- drop down for user that is NOT logged in -->
                 <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                   <li>
-                    <a class="dropdown-item" href="">Register
+                    <a class="dropdown-item" href="{% url 'account_signup' %}">Register
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="">Log in
+                    <a class="dropdown-item" href="{% url 'account_login' %}">Log in
                     </a>
                   </li>
                 </ul>
