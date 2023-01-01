@@ -1,0 +1,24 @@
+
+.text-white-50 {
+    color: #aaa !important;
+}
+
+
+
+#nav-big-logo-brand, #nav-big-items{
+    color:#aaa !important;
+}
+
+.nav-link > svg {
+    fill: #aaa !important;
+}
+
+/* just add class active for icon and nav text to become green */
+
+.nav-link.active > svg {
+    fill: greenyellow !important;
+}
+
+.nav-link.active {
+    color: greenyellow !important;
+}
