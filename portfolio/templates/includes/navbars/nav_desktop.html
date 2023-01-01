@@ -1,0 +1,96 @@
+<!-- nav bar from bootstrap 5 examples - headers -->
+{% block content %}
+<header id="nav-bar-big-screen">
+  <nav>
+    <div class="px-3 pt-2 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <!-- logo and brand -->
+          <a href="" id="nav-big-logo-brand" class="d-flex align-items-center justify-content-center justify-content-lg-start my-2 my-lg-0 me-lg-auto text-decoration-none">
+            <p class="text fs-1 ms-2 fw-bold">Tank
+            </p>
+          </a>
+          <ul id="nav-big-items" class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <!--"if" statement changes the text color for nav item depending on url name-->
+              <a href="" 
+                 class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home"/>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="" class="nav-link text-white"> 
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2"/>
+                </svg>
+                Drive
+              </a>
+            </li>
+            <li>
+              <a href="" 
+                 class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#grid"/>
+                </svg>
+                Reports
+              </a>
+            </li>
+            <li>
+              <a href="" 
+                 class="nav-link text-white">
+                <svg width="24" height="24" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
+                  <use xlink:href="#message"/>
+                </svg>
+                Traffic Alert
+              </a>
+            </li>
+            <li>
+              <!-- user-->
+              <a id="nav-big-user-dropdown" href="#" class="nav-link text-white
+                dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#people-circle"/>
+                </svg>
+                <!-- if user is authenticated, his name is shown, otherwise the words "Log in" -->
+                {% if user.is_authenticated %}
+                {{user.first_name}}
+              </a>
+                <!-- drop down for user that is logged in -->
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li>
+                    <a class="dropdown-item" href="">User profile
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">Sign out
+                    </a>
+                  </li>
+                </ul>
+            </li>
+                {% else %}
+                Log in
+                </a>
+                  <!-- drop down for user that is NOT logged in -->
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li>
+                    <a class="dropdown-item" href="">Register
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="">Log in
+                    </a>
+                  </li>
+                </ul>
+            </li>
+            {% endif %}
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+{% endblock %}
