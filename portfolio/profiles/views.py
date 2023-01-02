@@ -4,4 +4,4 @@ from django.views import View
 
 
 class ProfileView(TemplateView):
-    template_name = 'profile/profile.html'
+    template_name = 'profiles/profile.html'
