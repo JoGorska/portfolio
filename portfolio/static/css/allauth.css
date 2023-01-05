@@ -10,5 +10,5 @@ form label:not([for='id_remember']) {
 except of search-form input element in nav bar */
 
 form input:not(.search-form, [type='checkbox']) {
-    margin-top: 0.5rem; /* mt-4 */
+    margin-top: 0.5rem;
 }
