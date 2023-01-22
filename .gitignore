@@ -1,6 +1,6 @@
 
-
 .env
-
 .vscode
 __pycache__/
+portfolio_env
+.cheat_sheet.md
