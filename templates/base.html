@@ -21,6 +21,22 @@
 
     <!-- my css for base template -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
     {% endblock %}
     {% block extra_css %}
     {% endblock %}
@@ -77,8 +93,10 @@
     {% block page_header %}
     {% endblock %}
     <!-- content goes here -->
+    <main>
     {% block content %}
     {% endblock %}
+  </main>
     <!-- FOOTER -->
     <footer class="footer mt-auto">
       <hr class="featurette-divider">
