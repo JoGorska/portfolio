@@ -92,6 +92,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # this is for media files
                 'django.template.context_processors.media',
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
