@@ -1,24 +1,31 @@
-
-.text-white-50 {
-    color: #aaa !important;
+:root {
+    --secondary-light: #aaa;
+    --success-light: #B2C248;
 }
 
 
+.text-white-50 {
+    color: --secondary-light !important;
+}
 
 #nav-big-logo-brand, #nav-big-items{
-    color:#aaa !important;
+    color:--secondary-light !important;
 }
 
 .nav-link > svg {
-    fill: #aaa !important;
+    fill: --secondary-light!important;
+}
+
+.text-white-50 > svg {
+    fill: --secondary-light !important;
 }
 
 /* just add class active for icon and nav text to become green */
 
 .nav-link.active > svg {
-    fill: greenyellow !important;
+    fill: --success-light !important;
 }
 
 .nav-link.active {
-    color: greenyellow !important;
+    color: --success-light !important;
 }
