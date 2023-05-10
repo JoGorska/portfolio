@@ -13,6 +13,10 @@
     fill: #aaa !important;
 }
 
+.text-white-50 > svg {
+    fill: #aaa !important;
+}
+
 /* just add class active for icon and nav text to become green */
 
 .nav-link.active > svg {
