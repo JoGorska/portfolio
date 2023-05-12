@@ -8,6 +8,18 @@
     color: var(--secondary-light) !important;
 }
 
+.text-success-light {
+    color:var(--success-light) !important;
+}
+
+.btn-success-light {
+    background-color: var(--success-light);
+    border-color: var(--success-light);
+
+}
+
+/* navbar */
+
 #nav-big-logo-brand, #nav-big-items{
     color: var(--secondary-light) !important;
 }
